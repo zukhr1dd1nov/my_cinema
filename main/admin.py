@@ -1,5 +1,5 @@
 from django.contrib import admin
-from modeltranslation.translator import register, TranslationOptions
+from modeltranslation.admin import TranslationAdmin
 from main.models import MovieModel, ScheduleModel, CategoryModel
 
 
@@ -7,11 +7,11 @@ from main.models import MovieModel, ScheduleModel, CategoryModel
 
 @admin.register(ScheduleModel)
 class ScheduleModelAdmin(admin.ModelAdmin):
-    pass
+    fields = ['id','date','time']
 
-
-@register(CategoryModel)
-class CategoryModelAdmin(admin.ModelAdmin):
+@admin.register(CategoryModel)
+class CategoryModelAdmin(TranslationAdmin):
+    fields = ['id','name']
     class Media:
         js = (
             'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js',
@@ -22,8 +22,9 @@ class CategoryModelAdmin(admin.ModelAdmin):
             'screen': ('modeltranslation/css/tabbed_translation_fields.css',),
         }
 
-@register(MovieModel)
-class MovieModelAdmin(TranslationOptions):
+@admin.register(MovieModel)
+class MovieModelAdmin(TranslationAdmin):
+    fields = ['id','title','created_at']
     class Media:
         js = (
             'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js',

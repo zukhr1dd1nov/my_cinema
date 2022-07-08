@@ -27,8 +27,8 @@ class MovieModel(models.Model):
     title = models.CharField(max_length=255)
     photo = models.ImageField()
     body = RichTextField()
-    when = models.ManyToManyField(Schedule)
-    cateory = models.ManyToManyField(Category)
+    when = models.ManyToManyField(ScheduleModel)
+    category = models.ManyToManyField(CategoryModel)
     created_at = models.TimeField(auto_now_add=True)
 
     def __str__(self):
