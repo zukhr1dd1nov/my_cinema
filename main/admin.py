@@ -7,11 +7,12 @@ from main.models import MovieModel, ScheduleModel, CategoryModel
 
 @admin.register(ScheduleModel)
 class ScheduleModelAdmin(admin.ModelAdmin):
-    fields = ['id','date','time']
+     list_display = ['id','date','time']
+
 
 @admin.register(CategoryModel)
 class CategoryModelAdmin(TranslationAdmin):
-    fields = ['id','name']
+    list_display = ['id','name']
     class Media:
         js = (
             'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js',
@@ -24,7 +25,7 @@ class CategoryModelAdmin(TranslationAdmin):
 
 @admin.register(MovieModel)
 class MovieModelAdmin(TranslationAdmin):
-    fields = ['id','title','created_at']
+    list_display = ['id','title','created_at','is_active']
     class Media:
         js = (
             'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js',

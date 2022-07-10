@@ -29,6 +29,7 @@ class MovieModel(models.Model):
     body = RichTextField()
     when = models.ManyToManyField(ScheduleModel)
     category = models.ManyToManyField(CategoryModel)
+    is_active = models.BooleanField(default=False)
     created_at = models.TimeField(auto_now_add=True)
 
     def __str__(self):
@@ -37,4 +38,3 @@ class MovieModel(models.Model):
     class Meta:
         verbose_name = 'фильм'
         verbose_name_plural = 'фильмы'
-
