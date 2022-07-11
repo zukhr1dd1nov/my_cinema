@@ -12,7 +12,28 @@ class CategoryModel(models.Model):
         verbose_name = 'категория'
         verbose_name_plural = 'категории'
 
+class MovieModel(models.Model):
+    title = models.CharField(max_length=255)
+    photo = models.ImageField()
+    body = RichTextField()
+    age = models.PositiveSmallIntegerField()
+    time = models.CharField(max_length=5)
+    movie_reliased = models.PositiveSmallIntegerField()
+    category = models.ManyToManyField(CategoryModel)
+    is_active = models.BooleanField(default=False)
+    is_part_of_banner = models.BooleanField(default=False)
+    created_at = models.TimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = 'фильм'
+        verbose_name_plural = 'фильмы'
+
 class ScheduleModel(models.Model):
+    movie = models.ForeignKey(MovieModel,on_delete=models.RESTRICT)
+    price = models.PositiveIntegerField()
     date = models.DateField()
     time = models.TimeField()
 
@@ -22,19 +43,3 @@ class ScheduleModel(models.Model):
     class Meta:
         verbose_name = 'расписание'
         verbose_name_plural = 'расписания'
-
-class MovieModel(models.Model):
-    title = models.CharField(max_length=255)
-    photo = models.ImageField()
-    body = RichTextField()
-    when = models.ManyToManyField(ScheduleModel)
-    category = models.ManyToManyField(CategoryModel)
-    is_active = models.BooleanField(default=False)
-    created_at = models.TimeField(auto_now_add=True)
-
-    def __str__(self):
-        return self.title
-
-    class Meta:
-        verbose_name = 'фильм'
-        verbose_name_plural = 'фильмы'

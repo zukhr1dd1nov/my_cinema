@@ -1,0 +1,22 @@
+{% extends 'layouts/base.html' %}
+{% load static i18n my_filters %}
+{% block content %}
+    <section class="ms-5 mt-5 text-white-50 m-5 fs-5">
+        <h2 class="text-capitalize fs-1">{% trans 'фильмы' %}</h2>
+        <div class="w-50">{% trans 'Фильмы — страшные, смешные, драматические, романические — заставляют нас переживать целый спектр эмоций. Множество фильмов — множество впечатлений!' %}</div>
+        {% for category in object_list %}
+        <div class="text-capitalize mt-5 mb-4 fs-3">{{ category }}</div>
+            {% for movie in category.name_ru|category %}
+        <div class="d-flex overflow-auto scroll-hidden">
+            <a href="{% url 'movie' movie.pk %}" class="border-0 text-decoration-none me-4" style="background: #1f1b31;">
+                <img class="my-image rounded" src="{{ movie.photo.url }}" alt="...">
+                <div class="text-center text-white-50">{{ movie.title }}</div>
+            </a>
+        </div>
+            {% endfor %}
+            {% if category.name_ru|category is None %}
+                <div class="w-50">{% trans 'В этой категории нет фильмов' %}</div>
+            {% endif %}
+        {% endfor %}
+    </section>
+{% endblock %}

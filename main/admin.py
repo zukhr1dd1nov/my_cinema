@@ -25,7 +25,7 @@ class CategoryModelAdmin(TranslationAdmin):
 
 @admin.register(MovieModel)
 class MovieModelAdmin(TranslationAdmin):
-    list_display = ['id','title','created_at','is_active']
+    list_display = ['id','title','created_at','is_active','is_part_of_banner']
     class Media:
         js = (
             'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js',

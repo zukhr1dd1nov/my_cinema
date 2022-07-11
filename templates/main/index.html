@@ -1,0 +1,29 @@
+{% extends 'layouts/base.html' %}
+{% load static i18n %}
+
+{% block content %}
+    <div class="d-flex text-white-50 container mt-5">
+    <div class="my-bg rounded-3"><span class="text-black-50">____________________</span></div>
+    <div id="carouselExampleFade" class=" carousel me-5 ms-5 w-75 h-75 slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            {% for banner in banners %}
+                <a href="{% url 'movie' banner.pk %}" class="carousel-item active">
+                    <img src="{{ banner.photo.url }}" class="d-block rounded-3 w-100" alt="...">
+                    <div class="carousel-caption text-black d-none bottom-0 d-md-block">
+                        <h4>{{ banner.title }}</h4>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="my-bg rounded-3"><span class="text-black-50">____________________</span></div>
+    </div>
+{% endblock %}

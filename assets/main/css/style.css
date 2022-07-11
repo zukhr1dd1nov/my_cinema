@@ -2,17 +2,40 @@ body {
     background: #1f1b31;
 }
 
+.my-image {
+    width: 299px;
+    height: 168px;
+}
+
+.my-image-detail {
+    width: 1024px;
+    height: 579px;
+}
+
+.scroll-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#footer {
+    bottom: 0;
+    width: 100%;
+}
+
 .my-nav {
     height: 80px;
 }
-.my-bg{
+
+.my-bg {
     background: linear-gradient(to right, #2f2844, #3d3464);
 }
+
 @media (max-width: 992px) {
     .test {
-         height: auto;
+        height: auto;
     }
 }
+
 .my-logo {
     position: absolute;
     width: 100%;

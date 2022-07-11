@@ -1,0 +1,46 @@
+{% extends 'layouts/base.html' %}
+{% load static i18n my_filters %}
+
+{% block content %}
+    <div class="container d-flex mt-5 mb-5">
+        <img src="{{ object.photo.url }}" class=" w-50 h-50 img-fluid my-image-detail rounded-3">
+        <div class="text-white-50 fs-2 w-50">
+            <div class="text-center">{{ object.title }}</div>
+            <div class="lh-1">
+                <ul class="text-center m-0">
+                    <div class="fs-6 d-inline-block">{{ object.movie_reliased }} </div>
+                    <div class="fs-6 d-inline-block ms-2">{{ object.time|my_time }}</div>
+                    <div class="fs-6 d-inline-block ms-2">{{ object.age }}+ </div>
+                </ul>
+                <ul class="text-center m-0">
+                    {% for category in object.category.values %}
+                        <div class="text-white-50 fs-6 d-inline-block">{{ category.name }}</div>
+                        <span class="fs-6">{% if not forloop.last %}|{% endif %}</span>
+                    {% endfor %}
+                </ul>
+                <div class="ms-5 position-relative mt-4 fs-6">{{ object.body|safe }}</div>
+            </div>
+        </div>
+    </div>
+
+    <table class="table container text-white-50 text-center">
+  <thead>
+    <tr>
+      <th scope="col">№</th>
+      <th scope="col">{% trans 'Дата' %}</th>
+      <th scope="col">{% trans 'Время' %}</th>
+      <th scope="col">{% trans 'Цена' %}</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for when in object|movie %}
+    <tr>
+      <th scope="row">{{ forloop.counter }}</th>
+      <td>{{ when.date|date:'d F Y' }}</td>
+      <td>{{ when.time }}</td>
+      <td>{{ when.price }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
