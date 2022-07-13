@@ -1,0 +1,42 @@
+{% extends 'layouts/base.html' %}
+{% load i18n static my_filters %}
+
+{% block content %}
+    <div class="mt-5 pt-5 text-white-50 container">
+        <form class="d-flex justify-content-center" action="" method="get">
+            <input type="date" id="date" name="date" value="" min=""
+                   class="input-group-text my-bg text-white-50 border-0">
+            <select name="movie" class="ms-3 form-select my-bg text-white-50 border-0 w-25 me-3"
+                    aria-label="Default select example">
+                <option value="None" selected>{% trans 'Выберите фильм' %}</option>
+                {% for choice in choices %}
+                    <option value="{{ choice.id }}">{{ choice.title }}</option>
+                {% endfor %}
+            </select>
+            <button class="btn btn-outline-success">{% trans "Ок" %}</button>
+        </form>
+        <table class="table container text-white-50 mt-4 text-center">
+            <thead>
+            <tr>
+                <th scope="col">№</th>
+                <th scope="col">{% trans 'Название Фильма' %}</th>
+                <th scope="col">{% trans 'Дата' %}</th>
+                <th scope="col">{% trans 'Время' %}</th>
+                <th scope="col">{% trans 'Цена' %}</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for when in date|is_searched:is_searched %}
+                <tr>
+                    <th scope="row">{{ forloop.counter }}</th>
+                    <td><a href="{% url 'movie' when.movie.id %}"
+                           class="text-capitalize text-decoration-none text-white-50">{{ when.movie.title }}</a></td>
+                    <td>{{ when.date|date:'d F Y' }}</td>
+                    <td>{{ when.time }}</td>
+                    <td>{{ when.price }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

@@ -1,6 +1,32 @@
 from django.db import models
 from ckeditor.fields import RichTextField
+from django.utils.translation import gettext_lazy as _
 # Create your models here.
+BRANCHES = (
+        (1,_('Администрация')),
+        (2, _('Отдел маркетинга')),
+        (3, _('Жалобы и предложения')),
+        (4, _('Отдел бухгалтерии')),
+        (5, _('Отдел безопасности')),
+        (6, _('Отдел чистоты'))
+    )
+
+class ContactModel(models.Model):
+
+    where = models.IntegerField(choices=BRANCHES)
+    name = models.CharField(max_length=30)
+    last_name = models.CharField(max_length=30)
+    phone = models.CharField(max_length=9)
+    gmail = models.EmailField()
+    text = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = 'контакт'
+        verbose_name_plural = 'контакты'
 
 class CategoryModel(models.Model):
     name = models.CharField(max_length=255)

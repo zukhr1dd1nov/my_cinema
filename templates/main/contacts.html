@@ -2,5 +2,44 @@
 {% load static i18n %}
 
 {% block content %}
-
+    <div class="container text-white-50 p-4 mt-5 w-25 my-bg rounded-3">
+        <form action="{% url 'contacts' %}" method="post">
+        {% csrf_token %}
+            <div class="input-group mb-3">
+                <input required="required" type="text" name="name" class="form-control" placeholder="{% trans 'Имя' %}"
+                       aria-label="{% trans 'Имя' %}" aria-describedby="basic-addon2">
+                <span class="text-danger">{{ form.errors.name }}</span>
+            </div>
+            <div class="input-group mb-3">
+                <input required="required" type="text" name="last_name" class="form-control" placeholder="{% trans 'Фамилия' %}"
+                       aria-label="{% trans 'Фамилия' %}" aria-describedby="basic-addon2">
+                <span class="text-danger">{{ form.errors.last_name }}</span>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">+998</span>
+                <input required="required" name="phone" type="text" class="form-control" placeholder="{% trans 'Номер' %}"
+                       aria-label="{% trans 'Номер' %}"
+                       aria-describedby="basic-addon1">
+                <span class="text-danger">{{ form.errors.phone }}</span>
+            </div>
+            <div class="input-group mb-3">
+                <input required="required" type="text" name="gmail" class="form-control" placeholder="Email"
+                       aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span class="text-danger">{{ form.errors.gmail }}</span>
+            </div>
+            <select required="required" class="form-select mb-3" name="where" aria-label="Default select example">
+                <option selected>{% trans 'Выберите отдел' %}</option>
+                {% for number , choice in branches %}
+                <option value="{{ number }}">{{ choice }}</option>
+                {% endfor %}
+            </select>
+            <span class="text-danger">{{ form.errors.where }}</span>
+            <div class="input-group mb-3">
+                <span class="input-group-text">{% trans 'Текст' %}</span>
+                <textarea required="required" name="text" class="form-control" aria-label="With textarea"></textarea>
+                <span class="text-danger">{{ form.errors.text }}</span>
+            </div>
+            <button type="submit" class="btn btn-outline-success">Submit</button>
+        </form>
+    </div>
 {% endblock %}

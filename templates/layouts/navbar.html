@@ -1,8 +1,9 @@
-{% load i18n %}
+{% load i18n static %}
 <nav class="navbar navbar-expand-lg navbar-dark my-nav my-bg test">
     <div class="navbar-brand my-logo text-center">Cinema.uz</div>
-        <div class="container">
-        <button class="navbar-toggler" style="z-index: 99" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+    <div class="container">
+        <button class="navbar-toggler" style="z-index: 99" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -12,7 +13,7 @@
                     <a class="nav-link" aria-current="page" href="{% url 'home' %}">{% trans 'Главный' %}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">{% trans 'Расписание' %}</a>
+                    <a class="nav-link" href="{% url 'schedule' %}">{% trans 'Расписание' %}</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'movies' %}">{% trans 'Фильмы' %}</a>
@@ -23,9 +24,18 @@
                     <a class="nav-link" aria-current="page" href="{% url 'about' %}">{% trans 'О нас' %}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">{% trans 'Контакты' %}</a>
+                    <a class="nav-link" href="{% url 'contacts' %}">{% trans 'Обратная связь' %}</a>
                 </li>
-            </ul>
+                <li class="nav-item dropdown">
+                    <div class=' nav-link dropdown-toggle' data-bs-toggle="dropdown">{{ LANGUAGE_CODE }}</div>
+                    <ul class="dropdown-menu dropdown-menu-end color">
+                        {% for l in LANGUAGES %}
+                            <li><a href='/{{ l.0 }}/'
+                                   class="dropdown-item text-white-50 {% if l.0 == LANGUAGE_CODE %} my-active {% endif %} ">{{ l.1 }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </li>
         </div>
     </div>
 </nav>

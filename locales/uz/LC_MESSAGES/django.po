@@ -1,0 +1,217 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-13 05:07+0500\n"
+"PO-Revision-Date: 2022-07-13 05:39+0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: uz\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.3\n"
+
+#: main/forms.py:13
+msgid "Введите реальный номер!"
+msgstr "Iltimos, haqiqiy raqamni kiriting!"
+
+#: main/models.py:6
+msgid "Администрация"
+msgstr "Ma'muriyat"
+
+#: main/models.py:7
+msgid "Отдел маркетинга"
+msgstr "Marketing bo'limi"
+
+#: main/models.py:8
+msgid "Жалобы и предложения"
+msgstr "Shikoyat va takliflar"
+
+#: main/models.py:9
+msgid "Отдел бухгалтерии"
+msgstr "Buxgalteriya bo'limi"
+
+#: main/models.py:10
+msgid "Отдел безопасности"
+msgstr "Xavfsizlik boshqarmasi"
+
+#: main/models.py:11
+msgid "Отдел чистоты"
+msgstr "Poklik bo'limi"
+
+#: templates/layouts/footer.html:5 templates/layouts/navbar.html:13
+msgid "Главный"
+msgstr "Asosiy"
+
+#: templates/layouts/footer.html:6 templates/layouts/navbar.html:24
+msgid "О нас"
+msgstr "Biz haqimizda"
+
+#: templates/layouts/footer.html:7
+msgid "Контакты"
+msgstr "Kontaktlar"
+
+#: templates/layouts/navbar.html:16
+msgid "Расписание"
+msgstr "Jadval"
+
+#: templates/layouts/navbar.html:19
+msgid "Фильмы"
+msgstr "Filmlar"
+
+#: templates/layouts/navbar.html:27
+msgid "Обратная связь"
+msgstr "Qayta aloqa"
+
+#: templates/main/about.html:7
+msgid ""
+"Cinema.uz - одна из самых лучших кинотеартов в Узбекистане. главный "
+"концертный зал Узбекистана. Был построен в 1980 году в Ташкенте по проекту "
+"архитектора Евгения Розанова для проведения концертов и праздничных "
+"мероприятий. В концертном зале также проводятся официальные церемонии во "
+"время визитов представителей иностранных государств .главный концертный зал "
+"Узбекистана. Был построен в 1980 году в Ташкенте по проекту архитектора "
+"Евгения Розанова для проведения концертов и праздничных мероприятий. В "
+"концертном зале также проводятся официальные церемонии во время визитов "
+"представителей иностранных государств"
+msgstr ""
+"Cinema.uz – O‘zbekistondagi eng yaxshi kinoteatrlardan biri. O'zbekistonning "
+"asosiy konsert zali. U 1980 yilda Toshkentda arxitektor Yevgeniy Rozanov "
+"tomonidan konsertlar va bayram tadbirlari uchun qurilgan. Xorijiy davlatlar "
+"vakillari tashrifi chog‘ida ham rasmiy tantanalar konsert zalida bo‘lib "
+"o‘tadi.O‘zbekiston bosh konsert zali. U 1980 yilda Toshkentda arxitektor "
+"Yevgeniy Rozanov tomonidan konsertlar va bayram tadbirlari uchun qurilgan. "
+"Konsert zalida xorijiy davlatlar vakillari tashrifi chog‘ida ham rasmiy "
+"marosimlar o‘tkaziladi"
+
+#: templates/main/about.html:12
+msgid ""
+"Эта книга адресована всем, кто изучает русский язык. Но состоит она не из "
+"правил, упражнений и учебных текстов. Для этого созданы другие замечательные "
+"учебники. У этой книги совсем иная задача. Она поможет вам научиться не "
+"только разговаривать, но и размышлять по-русски. Книга, которую вы держите в "
+"руках, составлена из афоризмов и размышлений великих мыслителей, писателей, "
+"поэтов, философов и общественных деятелей различных эпох. Их мысли - о тех "
+"вопросах, которые не перестают волновать человечество. Вы можете соглашаться "
+"или не соглашаться с тем, что прочитаете в этой книге."
+msgstr ""
+"Ushbu kitob rus tilini o'rganayotgan har bir kishi uchun mo'ljallangan. "
+"Lekin u qoidalar, mashqlar va tarbiyaviy matnlardan iborat emas. Buning "
+"uchun boshqa ajoyib darsliklar mavjud. Bu kitob juda boshqacha maqsadni "
+"ko'zlaydi. Bu rus tilida nafaqat gapirishni, balki fikrlashni ham "
+"o'rganishga yordam beradi. Qo‘lingizda ushlab turgan kitob turli davrlarda "
+"yashab o‘tgan buyuk mutafakkir, yozuvchi, shoir, faylasuf va jamoat "
+"arboblarining aforizmlari va mulohazalaridan iborat. Ularning fikrlari "
+"insoniyatni hayajonga solishdan to'xtamaydigan masalalar haqida. Siz ushbu "
+"kitobda o'qiganlaringiz bilan rozi yoki qo'shilmasligingiz mumkin."
+
+#: templates/main/contacts.html:9 templates/main/contacts.html:10
+msgid "Имя"
+msgstr "Ism"
+
+#: templates/main/contacts.html:14 templates/main/contacts.html:15
+msgid "Фамилия"
+msgstr "Familiya"
+
+#: templates/main/contacts.html:20 templates/main/contacts.html:21
+msgid "Номер"
+msgstr "Nomer"
+
+#: templates/main/contacts.html:31
+msgid "Выберите отдел"
+msgstr "Bo'limni tanlang"
+
+#: templates/main/contacts.html:38
+msgid "Текст"
+msgstr "Tekst"
+
+#: templates/main/index.html:29
+msgid "Общая информация"
+msgstr "Umumiy malumotlar"
+
+#: templates/main/index.html:31
+msgid "Более 300 мест"
+msgstr "300 ortiq joylar"
+
+#: templates/main/index.html:32
+msgid "Успокаивающий интерьер"
+msgstr "TInchlantiradigan interyer"
+
+#: templates/main/index.html:33
+msgid "Приемлемая цена"
+msgstr "Qabul qilinadigan narx"
+
+#: templates/main/index.html:34
+msgid "Единственный в мире"
+msgstr "Dunyoda yagona"
+
+#: templates/main/index.html:35
+msgid "Незабываемый"
+msgstr "Unutilmas"
+
+#: templates/main/index.html:36
+msgid "Современный"
+msgstr "Zamonaviy"
+
+#: templates/main/index.html:40
+msgid "Наше местоположение"
+msgstr "Bizning joylashuvimiz"
+
+#: templates/main/index.html:48
+msgid "Расписание Кинотеатра"
+msgstr "Kinoteatrning jadvali"
+
+#: templates/main/index.html:49
+msgid "Ведите дату в которой вы хотите прийти к нам"
+msgstr "Bizga tashrif buyurishni xohlagan sanani kiriting"
+
+#: templates/main/index.html:54 templates/main/schedule.html:11
+msgid "Выберите фильм"
+msgstr "Filmni tanlang"
+
+#: templates/main/index.html:59 templates/main/schedule.html:16
+msgid "Ок"
+msgstr "Ok"
+
+#: templates/main/index.html:65 templates/main/schedule.html:22
+msgid "Название Фильма"
+msgstr "Filmning nomi"
+
+#: templates/main/index.html:66 templates/main/movie_detail.html:30
+#: templates/main/schedule.html:23
+msgid "Дата"
+msgstr "Sana"
+
+#: templates/main/index.html:67 templates/main/movie_detail.html:31
+#: templates/main/schedule.html:24
+msgid "Время"
+msgstr "Vaqt"
+
+#: templates/main/index.html:68 templates/main/movie_detail.html:32
+#: templates/main/schedule.html:25
+msgid "Цена"
+msgstr "Narx"
+
+#: templates/main/movies.html:5
+msgid "фильмы"
+msgstr "filmlar"
+
+#: templates/main/movies.html:6
+msgid ""
+"Фильмы — страшные, смешные, драматические, романические — заставляют нас "
+"переживать целый спектр эмоций. Множество фильмов — множество впечатлений!"
+msgstr ""
+"Filmlar - qo'rqinchli, kulgili, dramatik, romantik - bizni butun his-"
+"tuyg'ularni boshdan kechirishga majbur qiladi. Ko'p filmlar - ko'p "
+"taassurotlar!"
+
+#: templates/main/movies.html:18
+msgid "В этой категории нет фильмов"
+msgstr "Bu turkumda filmlar yoʻq"

@@ -1,0 +1,215 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-13 05:06+0500\n"
+"PO-Revision-Date: 2022-07-13 05:34+0500\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.3\n"
+
+#: main/forms.py:13
+msgid "Введите реальный номер!"
+msgstr "Please enter a real number!"
+
+#: main/models.py:6
+msgid "Администрация"
+msgstr "Administration"
+
+#: main/models.py:7
+msgid "Отдел маркетинга"
+msgstr "Marketing department"
+
+#: main/models.py:8
+msgid "Жалобы и предложения"
+msgstr "Complaints and suggestions"
+
+#: main/models.py:9
+msgid "Отдел бухгалтерии"
+msgstr "Accounting department"
+
+#: main/models.py:10
+msgid "Отдел безопасности"
+msgstr "Security department"
+
+#: main/models.py:11
+msgid "Отдел чистоты"
+msgstr "Cleanliness department"
+
+#: templates/layouts/footer.html:5 templates/layouts/navbar.html:13
+msgid "Главный"
+msgstr "Home"
+
+#: templates/layouts/footer.html:6 templates/layouts/navbar.html:24
+msgid "О нас"
+msgstr "About us"
+
+#: templates/layouts/footer.html:7
+msgid "Контакты"
+msgstr "Contacts"
+
+#: templates/layouts/navbar.html:16
+msgid "Расписание"
+msgstr "Schedule"
+
+#: templates/layouts/navbar.html:19
+msgid "Фильмы"
+msgstr "Movies"
+
+#: templates/layouts/navbar.html:27
+msgid "Обратная связь"
+msgstr "Feedback"
+
+#: templates/main/about.html:7
+msgid ""
+"Cinema.uz - одна из самых лучших кинотеартов в Узбекистане. главный "
+"концертный зал Узбекистана. Был построен в 1980 году в Ташкенте по проекту "
+"архитектора Евгения Розанова для проведения концертов и праздничных "
+"мероприятий. В концертном зале также проводятся официальные церемонии во "
+"время визитов представителей иностранных государств .главный концертный зал "
+"Узбекистана. Был построен в 1980 году в Ташкенте по проекту архитектора "
+"Евгения Розанова для проведения концертов и праздничных мероприятий. В "
+"концертном зале также проводятся официальные церемонии во время визитов "
+"представителей иностранных государств"
+msgstr ""
+"Cinema.uz is one of the best cinema theaters in Uzbekistan. the main concert "
+"hall of Uzbekistan. It was built in 1980 in Tashkent by architect Yevgeny "
+"Rozanov for concerts and festive events. The concert hall also hosts "
+"official ceremonies during the visits of representatives of foreign states. "
+"The main concert hall of Uzbekistan. It was built in 1980 in Tashkent by "
+"architect Yevgeny Rozanov for concerts and festive events. The concert hall "
+"also hosts official ceremonies during visits by representatives of foreign "
+"countries"
+
+#: templates/main/about.html:12
+msgid ""
+"Эта книга адресована всем, кто изучает русский язык. Но состоит она не из "
+"правил, упражнений и учебных текстов. Для этого созданы другие замечательные "
+"учебники. У этой книги совсем иная задача. Она поможет вам научиться не "
+"только разговаривать, но и размышлять по-русски. Книга, которую вы держите в "
+"руках, составлена из афоризмов и размышлений великих мыслителей, писателей, "
+"поэтов, философов и общественных деятелей различных эпох. Их мысли - о тех "
+"вопросах, которые не перестают волновать человечество. Вы можете соглашаться "
+"или не соглашаться с тем, что прочитаете в этой книге."
+msgstr ""
+"This book is addressed to everyone who appreciates the Russian language. It "
+"is not made up of rules, sports and educational texts. There are other great "
+"tutorials for that. This book has a very different problem. It will help you "
+"learn not only about the fruits, but also to discover them in Russian. The "
+"book you are holding in your hands is made up of aphorisms and reflections "
+"of great thoughts, writers, poets, philosophers and representatives of "
+"various eras. Their thoughts are about those that never cease to excite. You "
+"may agree or disagree with what you read in this book."
+
+#: templates/main/contacts.html:9 templates/main/contacts.html:10
+msgid "Имя"
+msgstr "Name"
+
+#: templates/main/contacts.html:14 templates/main/contacts.html:15
+msgid "Фамилия"
+msgstr "Surname"
+
+#: templates/main/contacts.html:20 templates/main/contacts.html:21
+msgid "Номер"
+msgstr "Phone number"
+
+#: templates/main/contacts.html:31
+msgid "Выберите отдел"
+msgstr "Select department"
+
+#: templates/main/contacts.html:38
+msgid "Текст"
+msgstr "Text"
+
+#: templates/main/index.html:29
+msgid "Общая информация"
+msgstr "General information"
+
+#: templates/main/index.html:31
+msgid "Более 300 мест"
+msgstr "Over 300 places"
+
+#: templates/main/index.html:32
+msgid "Успокаивающий интерьер"
+msgstr "Calming interior"
+
+#: templates/main/index.html:33
+msgid "Приемлемая цена"
+msgstr "Acceptable price"
+
+#: templates/main/index.html:34
+msgid "Единственный в мире"
+msgstr "The only one in the world"
+
+#: templates/main/index.html:35
+msgid "Незабываемый"
+msgstr "Unforgettable"
+
+#: templates/main/index.html:36
+msgid "Современный"
+msgstr "Modern"
+
+#: templates/main/index.html:40
+msgid "Наше местоположение"
+msgstr "Our location"
+
+#: templates/main/index.html:48
+msgid "Расписание Кинотеатра"
+msgstr "Cinema's Schedule"
+
+#: templates/main/index.html:49
+msgid "Ведите дату в которой вы хотите прийти к нам"
+msgstr "Enter the date you would like to visit us"
+
+#: templates/main/index.html:54 templates/main/schedule.html:11
+msgid "Выберите фильм"
+msgstr "Choose movie"
+
+#: templates/main/index.html:59 templates/main/schedule.html:16
+msgid "Ок"
+msgstr "Ok"
+
+#: templates/main/index.html:65 templates/main/schedule.html:22
+msgid "Название Фильма"
+msgstr "Movie's name"
+
+#: templates/main/index.html:66 templates/main/movie_detail.html:30
+#: templates/main/schedule.html:23
+msgid "Дата"
+msgstr "Date"
+
+#: templates/main/index.html:67 templates/main/movie_detail.html:31
+#: templates/main/schedule.html:24
+msgid "Время"
+msgstr "Time"
+
+#: templates/main/index.html:68 templates/main/movie_detail.html:32
+#: templates/main/schedule.html:25
+msgid "Цена"
+msgstr "Price"
+
+#: templates/main/movies.html:5
+msgid "фильмы"
+msgstr "movies"
+
+#: templates/main/movies.html:6
+msgid ""
+"Фильмы — страшные, смешные, драматические, романические — заставляют нас "
+"переживать целый спектр эмоций. Множество фильмов — множество впечатлений!"
+msgstr ""
+"Movies - scary, funny, dramatic, romantic - make us experience a whole range "
+"of emotions. Many films - many impressions!"
+
+#: templates/main/movies.html:18
+msgid "В этой категории нет фильмов"
+msgstr "There are no any films in this category"
